@@ -11,9 +11,16 @@ Personal aggregator marketplace for Claude Code plugins built by [AltDoug](https
 Then install any plugin from the catalog:
 
 ```
-/plugin install <plugin-name>
+/plugin install <plugin-name>@altdoug-plugins
 /reload-plugins
 ```
+
+**Naming heads-up**: the marketplace is added with `AltDoug/claude-plugins`
+(the GitHub `org/repo` path) but referenced as `altdoug-plugins` in
+plugin-install commands and `/plugin marketplace remove` (the manifest
+`name` field in `marketplace.json`). Claude Code uses the repo path for
+fetching and the manifest name for identifying the marketplace afterwards.
+Both are stable.
 
 ## Catalog
 
