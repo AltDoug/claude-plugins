@@ -1,5 +1,40 @@
+# macOS
 .DS_Store
-*.bak
-*.tmp
-.idea/
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editor / IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+.netrwhist
+
+# Merge conflict residue
+*.orig
+*.rej
+
+# Logs / temp
+*.log
+*.tmp
+.cache/
+
+# Secrets — prevent accidental commits of env files. Whitelist .env.example
+# so a documented template can be checked in.
+.env
+.env.*
+!.env.example
+
+# Build artifacts (none expected in an aggregator repo, placeholder)
+dist/
+build/
+node_modules/
