@@ -7,7 +7,7 @@
     {
       "name": "found-issues",
       "description": "Markdown-based issue tracker for AI agents. Claude logs out-of-scope issues; entries auto-flip to fixed on PR merge or commit-fix.",
-      "version": "1.5.5",
+      "version": "1.5.6",
       "source": {
         "source": "url",
         "url": "https://github.com/AltDoug/found-issues.git"
