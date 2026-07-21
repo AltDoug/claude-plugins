@@ -1,0 +1,21 @@
+{
+  "name": "altdoug-plugins",
+  "interface": {
+    "displayName": "AltDoug Plugins"
+  },
+  "plugins": [
+    {
+      "name": "found-issues",
+      "description": "Markdown-based issue tracker for AI agents. Dual-harness: skills on Codex via .codex-plugin, hooks via found-issues install-codex-hooks. Entries auto-flip to fixed on PR merge or commit-fix.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AltDoug/found-issues.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
