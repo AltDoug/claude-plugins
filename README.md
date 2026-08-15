@@ -15,6 +15,18 @@ Then install any plugin from the catalog:
 /reload-plugins
 ```
 
+### Codex
+
+The same marketplace works in OpenAI Codex for plugins that ship
+dual-harness support (currently `found-issues`):
+
+```
+codex plugin marketplace add AltDoug/claude-plugins
+codex plugin add found-issues
+```
+
+Check each plugin's README for harness-specific setup steps.
+
 **Naming heads-up**: the marketplace is added with `AltDoug/claude-plugins`
 (the GitHub `org/repo` path) but referenced as `altdoug-plugins` in
 plugin-install commands and `/plugin marketplace remove` (the manifest
