@@ -1,5 +1,6 @@
 {
   "name": "altdoug-plugins",
+  "description": "Aggregator marketplace for Claude Code and Codex plugins built by AltDoug.",
   "owner": {
     "name": "AltDoug"
   },
