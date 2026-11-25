@@ -1,0 +1,21 @@
+name: test
+
+# A thin caller of the shared workflows in https://github.com/AltDoug/ci-workflows
+# (public; pinned @v1). `static` checks that every .json parses, which is what
+# this repo ships: the two marketplace files. A broken one stops plugin installs.
+# Pull requests only: a push trigger on main would run every merged change twice.
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static:
+    uses: AltDoug/ci-workflows/.github/workflows/static.yml@v1
